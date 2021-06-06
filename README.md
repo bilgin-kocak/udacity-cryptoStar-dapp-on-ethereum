@@ -1,4 +1,4 @@
-# ND1309 C2 Ethereum Smart Contracts, Tokens and Dapps - Project Starter 
+# Udacity CryptoStar Dapp on Ethereum
 **PROJECT: Decentralized Star Notary Service Project** - For this project, you will create a DApp by adding functionality with your smart contract and deploy it on the public testnet.
 
 Udacity Blockchain Developer project to develop a digital app and deploy to Ethereum network.
