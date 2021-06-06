@@ -1,9 +1,58 @@
 # ND1309 C2 Ethereum Smart Contracts, Tokens and Dapps - Project Starter 
 **PROJECT: Decentralized Star Notary Service Project** - For this project, you will create a DApp by adding functionality with your smart contract and deploy it on the public testnet.
 
-### ToDo
-This Starter Code has already implemented the functionalities you implemented in the StarNotary (Version 2) exercise, and have comments in all the files you need to implement your tasks.
+Udacity Blockchain Developer project to develop a digital app and deploy to Ethereum network.
 
+With this project I have learnt how to interact with the Ethereum Blockchain, create and deploy a smart contract
+and develop a Web App
+
+## Requirements
+* Truffle
+* OpenZeppelin 
+* Node
+* [Infura Account](https://infura.io/)
+* MetaMask Browser Add-on
+
+Asset|Details
+---|---
+Truffle Version|5.3.8
+OpenZeppelin|2.1.2
+ERC-721 Token Name|Bilgin StarToken
+ERC-721 Token Symbol|BST
+Token Address @ Rinkeby|[0x2eb697bb0b6c6002a54a1dad0091f1262048f083](https://rinkeby.etherscan.io/address/0x2eb697bb0b6c6002a54a1dad0091f1262048f083)
+
+## Installation
+1) Download App
+    ```
+    git clone https://github.com/stevenhankin/udacity-cryptoStar-dapp-on-ethereum.git
+    cd udacity-cryptoStar-dapp-on-ethereum
+    ```
+2) Put your Infura Project Secret into ".secret" file
+    ```
+    echo "Metamask Wallet Seed" > .secret
+    ```
+3) Install required packages
+    ```
+    npm install && cd app && npm install
+    ```
+4) In truffle-config.js, set **infuraKey** to be your Infura Project ID
+5) From Crypto-Star-Dapp root, deploy StarNotary contract to network
+    ```
+    truffle compile
+    truffle migrate --network rinkeby
+    ```
+6) Start App Server
+    ```
+    cd app
+    npm run dev
+    ```
+7) Application should now be available on http://localhost:3000
+
+# Testing
+Start ```truffle develop``` then run the following:
+```
+migrate --reset
+test
 
 
 ### Dependencies
@@ -101,38 +150,3 @@ cd app
 node index.js
 ```
 
-## Troubleshoot
-#### Error 1 
-```
-'webpack-dev-server' is not recognized as an internal or external command
-```
-**Solution:**
-- Delete the node_modules folder, the one within the /app folder
-- Execute `npm install` command from the /app folder
-
-After a long install, everything will work just fine!
-
-
-#### Error 2
-```
-ParserError: Source file requires different compiler version. 
-Error: Truffle is currently using solc 0.5.16, but one or more of your contracts specify "pragma solidity >=0.X.X <0.X.X".
-```
-**Solution:** In such a case, ensure the following in `truffle-config.js`:
-```js
-// Configure your compilers  
-compilers: {    
-  solc: {      
-    version: "0.5.16", // <- Use this        
-    // docker: true,
-    // ...
-```
-
-## Raise a PR or report an Issue
-1. Feel free to raise a [Pull Request](https://github.com/udacity/nd1309-p2-Decentralized-Star-Notary-Service-Starter-Code/pulls) if you find a bug/scope of improvement in the current repository. 
-
-2. If you have suggestions or facing issues, you can log in issue. 
-
----
-
-Do not use the [Old depreacted zipped starter code](https://s3.amazonaws.com/video.udacity-data.com/topher/2019/January/5c51c4c0_project-5-starter-code/project-5-starter-code.zip)
