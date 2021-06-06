@@ -46,7 +46,7 @@ Token Address @ Rinkeby|[0x2eb697bb0b6c6002a54a1dad0091f1262048f083](https://rin
     cd app
     npm run dev
     ```
-7) Application should now be available on http://localhost:3000
+7) Application should now be available on http://localhost:8080
 
 # Testing
 Start ```truffle develop``` then run the following:
