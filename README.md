@@ -16,7 +16,7 @@ and develop a Web App
 Asset|Details
 ---|---
 Truffle Version|5.3.8
-OpenZeppelin|2.1.2
+OpenZeppelin|2.3.1
 ERC-721 Token Name|Bilgin StarToken
 ERC-721 Token Symbol|BST
 Token Address @ Rinkeby|[0x2eb697bb0b6c6002a54a1dad0091f1262048f083](https://rinkeby.etherscan.io/address/0x2eb697bb0b6c6002a54a1dad0091f1262048f083)
