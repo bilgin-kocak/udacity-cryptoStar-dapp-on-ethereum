@@ -27,7 +27,7 @@ Token Address @ Rinkeby|[0x2eb697bb0b6c6002a54a1dad0091f1262048f083](https://rin
     git clone https://github.com/stevenhankin/udacity-cryptoStar-dapp-on-ethereum.git
     cd udacity-cryptoStar-dapp-on-ethereum
     ```
-2) Put your Infura Project Secret into ".secret" file
+2) Put your Metamask Wallet Seed into ".secret" file
     ```
     echo "Metamask Wallet Seed" > .secret
     ```
